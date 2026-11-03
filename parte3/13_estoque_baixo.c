@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include "parte3.h"
 
-void listar_estoque_baixo(Produto produtos[], int quantidade, int limite) {
+void listar_estoque_baixo(Produto v[], int n, int limite) {
 
     int i;
     int encontrou = 0;
 
     printf("\nProdutos com estoque baixo:\n");
 
-    for (i = 0; i < quantidade; i++) {
+    for (i = 0; i < n; i++) {
 
-        if (produtos[i].estoque < limite) {
+        if (v[i].estoque < limite) {
 
             printf("%d - %s - %d unidades\n",
-                   produtos[i].codigo,
-                   produtos[i].nome,
-                   produtos[i].estoque);
+                   v[i].codigo,
+                   v[i].nome,
+                   v[i].estoque);
 
             encontrou = 1;
         }
