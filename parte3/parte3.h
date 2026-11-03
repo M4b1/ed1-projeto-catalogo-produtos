@@ -1,7 +1,7 @@
 #ifndef PARTE3_H
 #define PARTE3_H
 
-#include "../produto.h"
+#include "produto.h"
 
 // Topico 9 - Ordenacao por preco
 void ordenar_por_preco(Produto v[], int n, int *ordenado_por_codigo);
